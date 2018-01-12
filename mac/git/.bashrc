@@ -1,14 +1,15 @@
 export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export LSCOLORS=gacacxdxbaegedabagCaca
 
-alias ll='ls -alh'
+# Create alias for "ll" command, mainly for habit
+alias ll="ls -AlGh -I 'ntuser*' -I 'NTUSER*'"
 
 # If Git Prompt exists, setup up prompt
 # Source: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 # curl -o .git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 if [ -f ~/.git-prompt.sh ]; then
     source ~/.git-prompt.sh
-    export PS1=' \e[36m\u\e[35m:\e[33m\W\e[32;1m $(__git_ps1 "(%s)") \e[37;1m$ \e[0m'
+    export PS1=' \[\e[36;40m\]\u\[\e[m\]\[\e[35m\]:\[\e[m\]\[\e[33m\]\W\[\e[m\]\[\e[32m\]$(__git_ps1 "(%s)")\[\e[m\] \[\e[37m\]\\$\[\e[m\] '
 else
-    export PS1=' \e[36m\u\e[35m:\e[33m\W \e[37;1m$ \e[0m'
+    export PS1=" \[\e[36;40m\]\u\[\e[m\]\[\e[35m\]:\[\e[m\]\[\e[33m\]\W\[\e[m\] \[\e[37m\]\\$\[\e[m\] "
 fi
