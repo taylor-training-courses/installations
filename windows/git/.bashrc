@@ -1,7 +1,7 @@
 # Init script for Git Bash on Windows
 
 # Create alias for "ll" command, mainly for habit
-alias ll='ls -alh'
+alias ll="ls -AlGhg -I 'ntuser*' -I 'NTUSER*'"
 
 # If Git Prompt exists, setup up prompt
 # Source: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
