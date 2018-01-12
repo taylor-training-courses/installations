@@ -1,0 +1,9 @@
+[user]
+        name = Your Name
+        email = your.name@example.com
+[core]
+        editor = atom --wait
+        autocrlf = true
+[push]
+        default = simple
+
