@@ -2,7 +2,7 @@ export CLICOLOR=1
 export LSCOLORS=gacacxdxbaegedabagCaca
 
 # Create alias for "ll" command, mainly for habit
-alias ll="ls -AlGh -I 'ntuser*' -I 'NTUSER*'"
+alias ll="ls -Alh"
 
 # If Git Prompt exists, setup up prompt
 # Source: https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
