@@ -1,6 +1,6 @@
 [user]
-        name = Jason G Taylor
-        email = jason@git.training
+        name = Your Name
+        email = your.name@example.com
 [core]
         editor = atom --wait
         autocrlf = true
