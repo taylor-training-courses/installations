@@ -1,5 +1,6 @@
 # Init script for Git Bash on Windows
 export LS_COLORS="di=36;40:ln=32;40:so=32:pi=33:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=1;32;40:ow=32;40"
+export EDITOR=nano
 
 # Create alias for "ll" command, mainly for habit
 alias ll="ls -AlGh -I 'ntuser*' -I 'NTUSER*'"
