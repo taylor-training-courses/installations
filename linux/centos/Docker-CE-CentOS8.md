@@ -24,6 +24,14 @@ sudo systemctl enable docker
 
 sudo usermod -aG docker <your-user>
 sudo groups <your-user>
+```
+
+Go to https://github.com/docker/compose, releases, find latest release. Download docker-compose-Linux-x86_64 asset file
+
+```bash
+sudo mv ~/Downloads/docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 docker --version
+docker-compose --version
 ```
