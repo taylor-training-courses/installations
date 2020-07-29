@@ -1,2 +1,2 @@
 # installations
-Installation instructions for various technologies
+Installation instructions for various technologies and platforms
