@@ -10,6 +10,7 @@ cd fonts
 cd ..
 rm -rf fonts
 
+# install Oh My Zsh (https://ohmyz.sh/)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
