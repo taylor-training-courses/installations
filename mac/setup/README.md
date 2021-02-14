@@ -22,3 +22,19 @@ Recommended ZSH Themes:
 * awesomepanda
 * robbyrussell (default)
 * simple
+
+## Homebrew
+
+Go to https://brew.sh/, follow install instructions
+
+### Install Git via Homebrew
+
+```
+brew install git git-gui
+```
+
+Edit the .zshrc file, append to end:
+
+```
+export PATH="/opt/homebrew/opt/git/bin:$PATH" # for M1 Macs only
+```
