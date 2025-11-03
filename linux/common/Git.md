@@ -4,14 +4,20 @@ The version of Git provided by most package managers should be fine but it will 
 
 If you are content with your package manager's version of Git, skip to the Configuration section.
 
+
+## Requirements
+
 If you haven't already, ensure you have followed the corresponding Foundation instructions for your respective Linux distro or family:
 
-* [Debian-based Foundation](../debian/Foundation.md)
-* [RedHat-based Foundation](../redhat/Foundation.md)
+* Foundation:
+    * [Debian-based Foundation](../debian/Foundation.md)
+    * [RedHat-based Foundation](../redhat/Foundation.md)
 
 If you are using Arch - you are already a Linux demi-god and don't need my help to install stuff.
 
-### Git Install (via Homebrew)
+## Installation
+
+### Git Install via Homebrew (preferred)
 
 Use brew to install the latest version of Git:
 
@@ -24,6 +30,14 @@ brew install git
 ```bash
 brew install git git-gui
 ```
+
+### Git Installation via Updated PPA on Debian systems
+
+> Do not follow if Git is installed via Homebrew above. This is only an option for those that do not wish to use Homebrew.
+
+
+
+### Verification
 
 Restart Terminal app.
 

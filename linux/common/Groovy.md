@@ -1,4 +1,4 @@
-# Java Installation
+# Groovy Installation
 
 ## Requirements
 
@@ -9,13 +9,14 @@ If you haven't already, ensure you have followed the corresponding requirements 
     * [RedHat-based Foundation](../redhat/Foundation.md)
 * [Git](./Git.md)
 * [SDKMan](./SDKMan.md)
+* [Java](./Java.md)
 
 ## Installation
 
 Open a terminal, use SDKMan to install the latest version of Java:
 
 ```bash
-sdk install java
+sdk install groovy
 ```
 
 Restart terminal session.
@@ -23,8 +24,8 @@ Restart terminal session.
 ### Verification
 
 ```bash
-which java
-java --version
+which groovy
+groovy --version
 ```
 
 ## Visual Studio Code Integration
@@ -34,5 +35,5 @@ java --version
 Open VSCode:
 
 * Go to Extensions
-* Search for "Java"
-* Choose the "Java" extension by Oracle
+* Search for "Groovy"
+* Choose the "Groovy" extension by Mellow Marshmellow (or another one, there isn't an "official" extension)

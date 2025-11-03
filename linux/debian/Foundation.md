@@ -243,8 +243,7 @@ After authorization, should take you back to VSCode. Choose "Ask" mode and an AI
 
 ## Conclusion
 
-These are all the tools needed for the Git Going Fast course. If you followed this instruction guide, you can continue along starting with the Chapter 3 - 
-
+These are the foundational tools or components required for my courses and videos.
 
 
 [vscode]: https://code.visualstudio.com/ "A code editor from Microsoft that doesn't suck"

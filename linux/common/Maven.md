@@ -1,4 +1,4 @@
-# Java Installation
+# Maven Installation
 
 ## Requirements
 
@@ -9,6 +9,7 @@ If you haven't already, ensure you have followed the corresponding requirements 
     * [RedHat-based Foundation](../redhat/Foundation.md)
 * [Git](./Git.md)
 * [SDKMan](./SDKMan.md)
+* [Java](./Java.md)
 
 ## Installation
 
@@ -34,5 +35,5 @@ java --version
 Open VSCode:
 
 * Go to Extensions
-* Search for "Java"
-* Choose the "Java" extension by Oracle
+* Search for "Maven"
+* Choose the "Maven for Java" extension by Microsoft

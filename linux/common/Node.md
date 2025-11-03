@@ -24,3 +24,6 @@ which tsc
 tsc --version
 ```
 
+## VSCode Integration
+
+* VSCode has native integration for Node, NPM, JavaScript and Typescript
