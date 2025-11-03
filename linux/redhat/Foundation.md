@@ -1,4 +1,4 @@
-# Foundational Setup on Debian-family Distributions
+# Foundational Setup on RedHat-family Distributions
 
 Installs foundational components and software for most technical courses and part of the "Software Developement" setup instructions. All courses will assume at least these items have been installed with the following settings. If you deviate from these instructions, adjust accordingly (aka you're on your own).
 
@@ -6,28 +6,16 @@ Installs foundational components and software for most technical courses and par
 
 ### Starting Point
 
-Fresh installation of a recent Debian based Linux distribution:
+Fresh installation of a recent RedHat based Linux distributions or ones inspired by RedHat/Fedora and use dnf/yum package manager.
 
-* Debian 13
-* Ubuntu 24.04 LTS, 25.XX
-* Kubuntu 24.04 LTS, 25.XX
-* Zorin 18
-* Linux Mint 22.X
-* Pop!OS 22.X
+* RedHat Linux 9
+* Fedora 42
+* CentOS 9, 10 Stream
+* Rocky Linux
 
 There are only minor differences between distros if we use Homebrew to install required software.
 
-## Desktop Tweaks
-
-* Change display
-    - Using 4K monitor but setting zoom/scaling to 150%
-
-* Remove distracting icons on task bar
-* Remove clock from task bar
-* Increase size of task bar
-* Ensure task bar is at bottom if elsewhere by default (Ubuntu)
-
-## Konsole / Terminal App
+### Konsole / Terminal App
 
 > Setting for 4K at 150% zoom
 
@@ -35,12 +23,7 @@ There are only minor differences between distros if we use Homebrew to install r
     * Font: Monospace 20pt
     * Window: 150 Cols; 30 Rows
 
-* Hushlogin
-    `touch .hushlogin`
-
 ### Update Apt
-
-> If building automation scripts, use `apt-get` instead of `apt`.
 
 Let's make sure all existing packages are already updated.
 
@@ -240,6 +223,105 @@ Open VSCode. Click on CoPilot icon in bottom-right corner. Click "Setup", then c
 Return to Web browser, which should have a "continue" option to authorize VSCode to talk with GitHub.
 
 After authorization, should take you back to VSCode. Choose "Ask" mode and an AI agent - ask a simple question or simply say "hi"
+
+## Git
+
+The version of Git provided by most package managers should be fine but it will be a little out of date.
+
+### Git Install (via Homebrew)
+
+Use brew to install the latest version of Git:
+
+```bash
+brew install git git-gui
+```
+
+> Note: git-gui is highly option, I rarely use it these days
+
+Restart Terminal app.
+
+```
+which git
+git version
+```
+
+### Configuration
+
+Git requires a bit of configuration before allowing us to do very much with it.
+
+#### Minimal Settings
+
+Set the Git user's name and email - this will be included with every commit (change) made by you.
+
+__User Name and Email__:
+
+```bash
+git config set --global user.name "Your Name"
+git config set --global user.email "your.name@domain.com"
+```
+
+#### Default Text Editor with Git
+
+Set the core editor (used to edit commit messages, edit git config, etc). Your editor must already exist and the editor command needs to be accessible on the system path. Choose one of the following. This course uses Visual Studio Code.
+
+__Nano__:
+
+Simple terminal-based editor that comes Ubuntu/Linux Mint. Great option if prefer to say within the Terminal environment.
+
+```bash
+# Nano as default editor with Git
+git config set --global core.editor nano
+```
+
+__Visual Studio Code__:
+
+If you prefer VSCode as your default editor:
+
+```bash
+# VSCode as default editor with Git
+git config set --global core.editor "code --wait"
+```
+
+#### Default Push Behavior
+
+The old default was to push all changes on all branches. The new default (2.x) is to only push changes on the same branch, however, not setting this explicity caused Git to warn you about the change.
+
+__Simple Pushing__:
+
+```bash
+# Use "simple" behavior for pushing
+git config set --global push.default simple
+```
+
+#### Default Branch Name
+
+Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change soon anyway.
+
+__Main Default Branch__:
+
+```bash
+# Set default branch
+git config set --global init.defaultBranch main
+```
+
+#### Remote Branch
+
+Git does not automatically create a cooresponding remote "upstream" tracking branch upon first push.
+
+__Remote Auto Setup__:
+
+```bash
+# automatically setup remote branch upon push
+git config set --global push.autoSetupRemote true
+```
+
+#### Pager
+
+By default, commands like "log" goes into less/more, which requires pressing "q" to exit. Setting up the pager, we can tell less to exit out if content does not requier paging.
+
+```bash
+git config set --global core.pager "less -X -F"
+```
 
 ## Conclusion
 

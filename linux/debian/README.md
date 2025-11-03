@@ -6,19 +6,25 @@ Instructions are provided for those that prefer to do this themselves. The Debia
 
 ### Tested Ditributions and Versions
 
-* Debian 11, 12, 13
-* Ubuntu 22.x, 24.x
+* Debian 12, 13
+* Ubuntu 22.x, 24.x, 25.x
 * Kubuntu 24.x, 25.x
 * Linux Mint 21.x, 22.x
+* Pop! OS 22
+* Zorin 17.x, 18
+* ElementaryOS 7
 
 Should work with all recent versions of any Debian-family distributions.
 
 ## Contents
 
 * [Foundation](./Foundation.md)
+* [Git](../common/Git.md)
 * [Python](../common/Python.md)
 * [Go](../common/Go.md)
 * [Node](../common/Node.md)
+* [SDKMan](../common/SDKMan.md)
+* [Java](../common/Java.md)
 
 Foundation installs common software and components used in nearly all courses and videos.
 
