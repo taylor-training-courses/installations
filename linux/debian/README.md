@@ -16,9 +16,9 @@ Should work with all recent versions of any Debian-family distributions.
 ## Contents
 
 * [Foundation](./Foundation.md)
-* [Python](./Python.md)
-* [Go](./Go.md)
-* [Node](./Node.md)
+* [Python](../common/Python.md)
+* [Go](../common/Go.md)
+* [Node](../common/Node.md)
 
 Foundation installs common software and components used in nearly all courses and videos.
 
