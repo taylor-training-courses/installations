@@ -35,7 +35,19 @@ brew install git git-gui
 
 > Do not follow if Git is installed via Homebrew above. This is only an option for those that do not wish to use Homebrew.
 
+```bash
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+```
 
+### Git Installation via DNF
+
+> Do not follow if Git is installed via Homebrew above. This is only an option for those that do not wish to use Homebrew. The version installed will be based on what is available in your package manager's repository - which might be an older version of Git.
+
+```bash
+sudo dnf install git
+```
 
 ### Verification
 
@@ -46,11 +58,11 @@ which git
 git version
 ```
 
-### Configuration
+## Configuration
 
 Git requires a bit of configuration before allowing us to do very much with it.
 
-#### Minimal Settings
+### Minimal Settings
 
 Set the Git user's name and email - this will be included with every commit (change) made by you.
 
@@ -61,7 +73,7 @@ git config set --global user.name "Your Name"
 git config set --global user.email "your.name@domain.com"
 ```
 
-#### Default Text Editor with Git
+### Default Text Editor with Git
 
 Set the core editor (used to edit commit messages, edit git config, etc). Your editor must already exist and the editor command needs to be accessible on the system path. Choose one of the following. This course uses Visual Studio Code.
 
@@ -83,7 +95,7 @@ If you prefer [VSCode][vscode] as your default editor:
 git config set --global core.editor "code --wait"
 ```
 
-#### Default Push Behavior
+### Default Push Behavior
 
 The old default was to push all changes on all branches. The new default (2.x) is to only push changes on the same branch, however, not setting this explicity caused Git to warn you about the change.
 
@@ -94,7 +106,7 @@ __Simple Pushing__:
 git config set --global push.default simple
 ```
 
-#### Default Branch Name
+### Default Branch Name
 
 Git still uses "master" as the default branch name if one isn't provided, but (nearly) all Git hosting providers have adopted "main" as the default - including GitHub. I recommend changing the default locally to "main" as the default is likely to change soon anyway.
 
@@ -105,7 +117,7 @@ __Main Default Branch__:
 git config set --global init.defaultBranch main
 ```
 
-#### Remote Branch
+### Remote Branch
 
 Git does not automatically create a cooresponding remote "upstream" tracking branch upon first push.
 
@@ -116,7 +128,7 @@ __Remote Auto Setup__:
 git config set --global push.autoSetupRemote true
 ```
 
-#### Pager
+### Pager
 
 By default, commands like "log" goes into less/more, which requires pressing "q" to exit. Setting up the pager, we can tell less to exit out if content does not requier paging.
 
