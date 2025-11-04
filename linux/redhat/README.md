@@ -18,6 +18,15 @@ Should work with all recent versions of any RedHat-family distribution.
 * [Python](../common/Python.md)
 * [Go](../common/Go.md)
 * [Node](../common/Node.md)
+* [SDKMan](../common/SDKMan.md)
+* [Java](../common/Java.md)
+* [Maven](../common/Maven.md)
+* [Groovy](../common/Groovy.md)
+* [Gradle](../common/Gradle.md)
+* Docker:
+    * [RHEL](./Docker-RHEL.md)
+    * [Fedora](./Docker-Fedora.md)
+    * [CentOS](./Docker-CentOS.md)
 
 Foundation installs common software and components used in nearly all courses and videos.
 

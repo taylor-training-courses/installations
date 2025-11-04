@@ -25,6 +25,12 @@ Should work with all recent versions of any Debian-family distributions.
 * [Node](../common/Node.md)
 * [SDKMan](../common/SDKMan.md)
 * [Java](../common/Java.md)
+* [Maven](../common/Maven.md)
+* [Groovy](../common/Groovy.md)
+* [Gradle](../common/Gradle.md)
+* Docker:
+    * [Debian](./Docker-Debian.md)
+    * [Ubuntu](./Docker-Ubuntu.md)
 
 Foundation installs common software and components used in nearly all courses and videos.
 
