@@ -54,15 +54,6 @@ node --version
 npm --version
 ```
 
-
-### Typescript
-
-```bash
-npm install -g typescript
-which tsc
-tsc --version
-```
-
 ## VSCode Integration
 
 * VSCode has native integration for Node, NPM, JavaScript and Typescript
@@ -73,14 +64,11 @@ tsc --version
 
 ```bash
 npm install -g typescript webpack yarn express-generator sass
-which tsc
-tsc --version
 ```
 
 ### Verification
 
 ```bash
-npm install -g typescript webpack yarn express-generator sass
 which tsc webpack yarn express sass 
 tsc --version
 webpack --version
