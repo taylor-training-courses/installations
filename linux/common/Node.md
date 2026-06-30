@@ -18,7 +18,7 @@ NVM allows easy management of multiple versions or installs of NodeJS. Most impo
 One line install script:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
 ```
 
 * Restart terminal
