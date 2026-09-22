@@ -97,6 +97,25 @@ You can use the keyboard shortcut "Ctrl and Plus" together to increase the user 
     * Choose a free agent (top options)
     * Ask it "how are things going" or something similar
 
+## WSLv2 install
+
+Check Virtualization ability - Windows + R, type "msinfo32"
+System Summary > Virtualization Enabled in Firmware - "Yes"
+
+Install WSLv2:
+
+```bash
+wsl --install
+```
+
+One or more reboots will be needed.
+
+Verify:
+
+```bash
+wsl --list --verbose
+wsl --version
+```
 
 ## Conclusion
 
