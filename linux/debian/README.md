@@ -12,7 +12,7 @@ Instructions are provided for those that prefer to do this themselves. The Debia
 * Linux Mint 21.x, 22.x
 * Pop! OS 22
 * Zorin 17.x, 18
-* ElementaryOS 7
+* ElementaryOS 8
 
 Should work with all recent versions of any Debian-family distributions.
 
